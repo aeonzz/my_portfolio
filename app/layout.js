@@ -13,10 +13,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-zinc-950 relative md:w-[75%] w-[85%] m-auto overflow-hidden`}>
-        <Navbar />
-        {children}
-        <Footer />
+      <body className={`${inter.className} bg-zinc-950 relative`}>
+        <div className='relative md:w-[75%] w-[85%] m-auto'>
+          <Navbar />
+          {children}
+          <Footer />
+
+        </div>
       </body>
     </html>
   )

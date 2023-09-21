@@ -8,7 +8,8 @@ import Skills from './Skills';
 
 const Page = () => {
 
-  useEffect( () => {(
+  useEffect( () => {
+    (
       async () => {
           const LocomotiveScroll = (await import('locomotive-scroll')).default
           const locomotiveScroll = new LocomotiveScroll();
@@ -26,4 +27,4 @@ const Page = () => {
   )
 }
 
-export default Page
+export default Page;
