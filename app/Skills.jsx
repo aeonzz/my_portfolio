@@ -9,9 +9,11 @@ const Skills = () => {
       <div data-scroll data-scroll-speed="0.02" className='flex md:justify-between justify-center items-center flex-wrap w-[80%] h-auto gap-10 mt-16 m-auto'>
         {icons.map((icon) => (
           <Image
+            key={icon.id}
             src={icon.logo}
             width={50}
             height={50}
+            alt='logos'
           />
         ))}
       </div>
